@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/scratch/cganley2/ran900/model.py", line 123, in <module>
+    training_loop.run()
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/training/training_loop.py", line 191, in run
+    self._run_evaluation()
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/training/training_loop.py", line 239, in _run_evaluation
+    eval_loss = run_evaluation(
+                ^^^^^^^^^^^^^^^
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/training/evaluation.py", line 125, in run_evaluation
+    _metrics = evaluation_step(params, batch, epoch_number)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/training/evaluation.py", line 47, in _evaluation_step
+    _, metrics = eval_loss_fun(predictions, graph, training_epoch)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/models/loss.py", line 167, in __call__
+    metrics |= self._compute_eval_metrics(prediction, ref_graph)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/models/loss.py", line 177, in _compute_eval_metrics
+    return loss_helpers.compute_eval_metrics(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cganley2/.conda/envs/mlip/lib/python3.11/site-packages/mlip/models/loss_helpers.py", line 250, in compute_eval_metrics
+    delta_stress_list.append(ref_graph.globals.stress - pred_graph.globals.stress)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'DynamicJaxprTracer' and 'NoneType'
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),

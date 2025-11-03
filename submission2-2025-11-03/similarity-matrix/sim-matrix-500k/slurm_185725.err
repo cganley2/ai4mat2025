@@ -1,0 +1,6 @@
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),

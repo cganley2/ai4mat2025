@@ -1,0 +1,11 @@
+{
+    "atomic_energies_map": {
+        "6": -443.345117458216,
+        "14": -443.3451174582153
+    },
+    "cutoff_distance_angstrom": 5.0,
+    "avg_num_neighbors": 45.717592592592595,
+    "avg_r_min_angstrom": 1.7280616760253906,
+    "scaling_mean": 0.0,
+    "scaling_stdev": 1.0
+}

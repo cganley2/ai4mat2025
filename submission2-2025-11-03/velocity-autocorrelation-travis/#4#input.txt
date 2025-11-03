@@ -1,0 +1,7 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Oct  6 2025 14:13:07
+! Source code version: Jul 29 2022
+! Input file written at Fri Oct 24 09:09:42 2025.
+! Do you want to assign atom data to them (y/n)? [yes] 
+n
+! Do you want to hide atom type "Energy" (y/n)? [yes] 

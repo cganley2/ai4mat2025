@@ -1,0 +1,79 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Oct  6 2025 14:13:07
+! Source code version: Jul 29 2022
+! Input file written at Fri Oct 10 08:30:52 2025.
+SiC-500K-5ps.xyz
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+y
+! Use periodic boundary conditions (0=no, x, y, z, xy, xz, xyz)? [xyz]
+xyz
+! Use time-dependent cell vector (NPT ensemble) (y/n)? [no] 
+
+! Is the simulation cell non-orthorhombic (cell angles other than 90 deg) (y/n)? [no] 
+y
+! Enter three cell vectors (y) or three edge lengths and angles (n)? [no] 
+y
+! Enter X component of cell vector A in pm:       
+929
+! Enter Y component of cell vector A in pm: [0.0] 
+0.15
+! Enter Z component of cell vector A in pm: [0.0] 
+1.52
+! Enter X component of cell vector B in pm: [0.0] 
+464
+! Enter Y component of cell vector B in pm:       
+805
+! Enter Z component of cell vector B in pm: [0.0] 
+1.52
+! Enter X component of cell vector C in pm: [0.0] 
+310
+! Enter Y component of cell vector C in pm: [0.0] 
+179
+! Enter Z component of cell vector C in pm:       
+507
+! Acknowledged: [Ok] 
+
+! Should the periodic box be multiplied (y/n)? [no] 
+
+! Execute molecule recognition for which time step (-1 = disable)? [0] 
+-1
+! Show bond matrices only for first representant of each molecule type (y/n)? [yes] 
+n
+! Show only bonds in the bond matrices (y/n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Change the atom ordering in some molecule (y/n)? [no] 
+
+! Define additional virtual atoms (y/n)? [no] 
+
+! Do you want to define pseudo-molecules (y/n)? [no] 
+
+! Which functions to compute (comma separated)?
+acf
+! Use the advanced mode for the main part (y/n)? [no] 
+y
+! Enter the physical time distance between successive trajectory frames in fs: [0.5] 
+0.9676
+! Compute global velocity autocorrelation of whole system (y/n) [yes] 
+
+! Enter the correlation depth of the ACF (in trajectory frames): [3750] 
+
+! Write Cartesian contributions (x, y, z, xy, xz, yz) of this autocorrelation (y/n)? [no] 
+
+! Window function: None (0), cos^2(a*t) (1), exp(-t/a) (2), exp(-(t/a)^2) (3) [0] 
+
+! Weight autocorrelation functions by atomic mass (y/n)? [no] 
+
+! Compute velocity autocorrelation of certain atoms/molecules (y/n)? [no] 
+
+! Perform a multi-interval analysis (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/scratch/cganley2/ran900/model.py", line 35, in <module>
+    from dscribe.descriptors import SOAP, CoulombMatrix, ACSF, MBTR
+ModuleNotFoundError: No module named 'dscribe'

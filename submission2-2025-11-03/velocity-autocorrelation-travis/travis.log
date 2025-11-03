@@ -1,0 +1,513 @@
+Command line:
+"travis -p SiC-1500K-5ps.xyz -i input-start-1000.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on tinkercliffs1 at Fri Oct 24 09:44:32 2025 (PID 437022)
+ #  Running in /home/cganley2/ai4mat2025/velocity-autocorrelation-travis
+ #  Version: Jul 29 2022, built at Oct  6 2025, 14:12:04, compiler "11.5.0 20240719 (Red Hat 11.5.0-5)", GCC 11.5.0
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/cganley2,  Executable: /home/cganley2/.conda/envs/ds/bin/travis
+ #  Input from input-start-1000.txt, Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/cganley2/.travis.conf ...
+
+    Opening position trajectory SiC-1500K-5ps.xyz ...
+
+    Trajectory contains approximately 5000 frames (just a *guess* from the file size of 12.38 MiB).
+
+    36 atoms in the system: 18x C, 18x Si
+
+    System extent:  X = {     +0 ..  +1239 pm }, dX = 1239 pm
+      (in step 1)   Y = {     -0 ..   +715 pm }, dY = 715 pm
+                    Z = {     -0 ..   +319 pm }, dZ = 319 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] y
+
+    Use periodic boundary conditions (0=no, x, y, z, xy, xz, xyz)? [xyz] <RETURN>
+    A cell vector of 1062.20 pm would result in a density of 1.0 g/cm^3.
+
+    Use time-dependent cell vector (NPT ensemble) (y/n)? [no] <RETURN>
+
+    Is the simulation cell non-orthorhombic (cell angles other than 90 deg) (y/n)? [no] y
+
+    Enter three cell vectors (y) or three edge lengths and angles (n)? [no] y
+
+    Enter X component of cell vector A in pm:       9.289998233647655
+    Enter Y component of cell vector A in pm: [0.0] -0.0015049812188321391
+    Enter Z component of cell vector A in pm: [0.0] 0.01528206237641277
+
+    Enter X component of cell vector B in pm: [0.0] 4.643693870766754
+    Enter Y component of cell vector B in pm:       8.046121966275368
+    Enter Z component of cell vector B in pm: [0.0] 0.01528206237641277
+
+    Enter X component of cell vector C in pm: [0.0] 3.10469264438299
+    Enter Y component of cell vector C in pm: [0.0] 1.7924976616817432
+    Enter Z component of cell vector C in pm:       5.067689814146376
+
+    Warning: The usual convention is to put cell vector A on the positive X axis, cell vector B in the XY plane
+             with positive Y value, and cell vector C with positive Z value. You did not keep to this convention.
+             Several functions may not work properly. You should rotate your cell to keep this conventions.
+
+    Acknowledged: [Ok] <RETURN>
+
+    Computing inverse of transformation matrix...
+
+    *** Non-orthorhombic cell geometry ***
+    *
+    *   Cell vector A: (     9.2900 |    -0.0015 |     0.0153 ), Length      9.290 pm.
+    *   Cell vector B: (     4.6437 |     8.0461 |     0.0153 ), Length      9.290 pm.
+    *   Cell vector C: (     3.1047 |     1.7925 |     5.0677 ), Length      6.208 pm.
+    *
+    *   Cell angle Alpha (between B and C):   59.904 degree.
+    *   Cell angle Beta  (between A and C):   59.904 degree.
+    *   Cell angle Gamma (between A and B):   60.018 degree.
+    *
+    *   Cell volume:  0.000 Angstrom^3 = 0.000000 nm^3.
+    *   Cell density: 3167739.320282 g/cm^3.
+    *
+    *   Orthogonal bounding box of the cell:
+    *     dX =    17.0384 pm,  dY =     9.8401 pm,  dZ =     5.0983 pm.
+    *
+    *   Minimal periodic diameter (smallest distance between atom and its periodic image):
+    *     Min. Diam. =     5.0609 pm.
+    *     ( dA =     7.5827 pm,  dB =     7.5826 pm,  dC =     5.0609 pm )
+    *
+    *   Determinant of the forward transformation matrix is       378.328.
+    *   Determinant of the backward transformation matrix is   0.00264321.
+    *
+    *** End of non-orthorhombic cell geometry ***
+
+
+    Should the periodic box be multiplied (y/n)? [no] <RETURN>
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      Si      |          14 |  28.08500 |           118.00 |          210.00 | #00FFFF
+
+
+    Execute molecule recognition for which time step (-1 = disable)? [0] -1
+
+    Skipping molecule recognition, using atoms as molecules...
+
+    36 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating non-refined topological atom order...
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 2 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 0 rings.
+    Molecule recognition finished.
+
+    Show bond matrices only for first representant of each molecule type (y/n)? [yes] n
+    Show only bonds in the bond matrices (y/n)? [yes] <RETURN>
+
+Output of bond matrices:
+
+*** Molecule 1: Si; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 2; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 3; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 4; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 5; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 6; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 7; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 8; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 9; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 10; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 11; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 12; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 13; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 14; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 15; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 16; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 17; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 1: Si; Representant 18; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 1; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 2; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 3; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 4; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 5; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 6; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 7; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 8; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 9; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 10; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 11; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 12; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 13; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 14; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 15; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 16; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 17; Distances in pm ***
+[only 1 Atom]
+
+*** Molecule 2: C; Representant 18; Distances in pm ***
+[only 1 Atom]
+
+
+*** The following 2 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  Si (18 pieces, 28.09 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  79004667.495304 mol/liter
+
+  - Molecule 2:  C (18 pieces, 12.01 g/mol)
+      (1 noneq. atom, 0 noneq. bonds, 0 noneq. angles)
+      Concentration:  79004667.495304 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] <RETURN>
+
+    Accept these molecules (y) or change something (n)? [yes] <RETURN>
+
+    Uniting molecules which have been broken by wrapping...
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (Si):  (only one atom)
+
+      (*) Molecule 2 (C):   (only one atom)
+
+
+    The atoms are currently ordered by topological priority.
+
+    Change the atom ordering in some molecule (y/n)? [no] <RETURN>
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - Si...
+      - C...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - Si...
+      - C...
+
+
+    Define additional virtual atoms (y/n)? [no] <RETURN>
+
+    Pseudo-molecules are a tool to group together certain atoms from certain different
+    molecules in a system. This group can then be used lika a normal molecule in analyses
+    (e.g., center of mass of all solvent molecules, etc.).
+
+    Do you want to define pseudo-molecules (y/n)? [no] <RETURN>
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #3 in Si ...
+      - Dipole vector #2 --> #3 in C ...
+
+>>> 6 virtual atoms have been defined: >>>
+
+    #1 in Si: Center of Geometry.
+    #2 in Si: Center of Mass.
+
+    #3 in Si - tip of molecular dipole vector starting in #2.
+
+    #1 in C: Center of Geometry.
+    #2 in C: Center of Mass.
+
+    #3 in C - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? acf
+
+ acf     - Velocity Autocorrelation Functions
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] y
+
+    Enter the physical time distance between successive trajectory frames in fs: [0.5] 0.9676
+
+
+    Compute global velocity autocorrelation of whole system (y/n) [yes] <RETURN>
+
+>>> Global Velocity Autocorrelation >>>
+
+    Enter the correlation depth of the ACF (in trajectory frames): [3750] 2750
+
+    CalcFFTSize(): 2750 = 2^6 * 3^2 * 5^1 - 130. Prime factors other than 2, 3, 5 not allowed.
+    The next "fast" size for FFT is 2880. Using this instead of 2750 as depth.
+
+    Write Cartesian contributions (x, y, z, xy, xz, yz) of this autocorrelation (y/n)? [no] <RETURN>
+
+    Window function: None (0), cos^2(a*t) (1), exp(-t/a) (2), exp(-(t/a)^2) (3) [0] <RETURN>
+
+    Weight autocorrelation functions by atomic mass (y/n)? [no] <RETURN>
+
+<<< End of Global Velocity Autocorrelation <<<
+
+    Compute velocity autocorrelation of certain atoms/molecules (y/n)? [no] <RETURN>
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    Perform a multi-interval analysis (y/n)? [no] <RETURN>
+    In which trajectory frame to start processing the trajectory? [1] 1000
+    How many trajectory frames to read (from this position on)? [all] <RETURN>
+    Use every n-th read trajectory frame for the analysis: [1] <RETURN>
+
+    Using 4001 time steps: Every 1st within range 1000 - approx. 5000.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Fast-forwarding to step 1000...
+  [##################################################]
+    Step 1000 begins at offset 2593404 (2.5 MB).
+
+    Velocity cache: Trying to allocate 3.63 MiB of memory...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Fast-forwarding to step 1000...
+
+Step      0 ..................................................
+Step     50 ..................................................
+Step   1050 ..................................................
+Step   2050 ..................................................
+Step   3050 ................................................
+End of Trajectory File reached.
+
+
+##########   Main pass done   ##########
+
+3999 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Velocity Autocorrelation 1 >>>
+
+    Calculating autocorrelation...
+      [####################################]
+    Saving autocorrelation function as "vacf_global.csv"...
+[Renaming existing File vacf_global.csv to #2#vacf_global.csv ...OK.]
+
+<<< End of Velocity Autocorrelation 1 <<<
+
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+

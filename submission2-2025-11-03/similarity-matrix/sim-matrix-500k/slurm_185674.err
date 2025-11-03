@@ -1,0 +1,13 @@
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+/home/cganley2/.conda/envs/ds/lib/python3.11/site-packages/dscribe/core/system.py:90: FutureWarning: Please use atoms.calc
+  calculator=atoms.get_calculator(),
+slurmstepd: error: *** JOB 185674 ON owl054 CANCELLED AT 2025-11-02T10:14:16 DUE TO TIME LIMIT ***

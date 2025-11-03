@@ -1,0 +1,5 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Oct  6 2025 14:13:07
+! Source code version: Jul 29 2022
+! Input file written at Fri Oct 24 09:12:21 2025.
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
